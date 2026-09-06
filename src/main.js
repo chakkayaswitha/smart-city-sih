@@ -2189,7 +2189,7 @@ async function findHomes() {
 
     const response =
       await fetch(
-        "http://localhost:5000/api/houses/search",
+        "https://smart-city-backend-97sd.onrender.com/api/houses/search",
         {
 
           method: "POST",
