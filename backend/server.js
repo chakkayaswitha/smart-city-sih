@@ -5,7 +5,6 @@ const path = require("path");
 
 const app = express();
 
-const PORT = 5000;
 
 // ===============================
 // MIDDLEWARE
@@ -188,11 +187,8 @@ app.post("/api/houses/search", (req, res) => {
 // ===============================
 // START SERVER
 // ===============================
+const PORT = process.env.PORT || 5000;
 
-app.listen(PORT, () => {
-
-  console.log(
-    `Smart City Backend running at http://localhost:${PORT}`
-  );
-
+app.listen(PORT, "0.0.0.0", () => {
+  console.log(`Smart City Backend running on port ${PORT}`);
 });
