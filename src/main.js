@@ -1,3 +1,4 @@
+
 import "./style.css";
 
 import {
@@ -29,27 +30,21 @@ import {
 
 document.querySelector("#app").innerHTML = `
 
-
 <!-- ====================================================
      NAVBAR
      ==================================================== -->
 
 <header class="navbar">
-
   <div class="logo">
-
     <span class="logo-icon">🏙️</span>
-
     <span>
       SMART<span class="logo-highlight">CITY</span>
     </span>
-
   </div>
-
-
-  <nav>
-
-    <a href="#home">Home</a>
+<nav>
+  <a href="#home">
+      Home
+    </a>
 
     <a href="#properties">
       Properties
@@ -70,7 +65,12 @@ document.querySelector("#app").innerHTML = `
   </nav>
 
 
-  <div class="nav-buttons">
+  <!-- AUTH / PROFILE AREA -->
+
+  <div
+    class="nav-buttons"
+    id="navButtons"
+  >
 
     <button
       class="login-btn"
@@ -78,7 +78,6 @@ document.querySelector("#app").innerHTML = `
     >
       Login
     </button>
-
 
     <button
       class="signup-btn"
@@ -111,29 +110,23 @@ document.querySelector("#app").innerHTML = `
 
   <div class="hero-content">
 
-
     <div class="badge">
       ✨ SMART LIVING • SMART PLANNING
     </div>
 
 
     <h1>
-
       Design Your
-
       <span>
         Dream Home
       </span>
-
     </h1>
 
 
     <p>
-
       Find the perfect house or apartment and
       visualize your dream remodeling in an
       interactive 3D environment.
-
     </p>
 
 
@@ -160,7 +153,6 @@ document.querySelector("#app").innerHTML = `
     <div class="stats">
 
       <div>
-
         <strong>
           500+
         </strong>
@@ -168,12 +160,10 @@ document.querySelector("#app").innerHTML = `
         <span>
           Properties
         </span>
-
       </div>
 
 
       <div>
-
         <strong>
           120+
         </strong>
@@ -181,12 +171,10 @@ document.querySelector("#app").innerHTML = `
         <span>
           3D Designs
         </span>
-
       </div>
 
 
       <div>
-
         <strong>
           98%
         </strong>
@@ -194,7 +182,6 @@ document.querySelector("#app").innerHTML = `
         <span>
           Happy Customers
         </span>
-
       </div>
 
     </div>
@@ -258,23 +245,20 @@ document.querySelector("#app").innerHTML = `
 
 
     <h2>
-
       What kind of home are
       <span>
         you looking for?
       </span>
-
     </h2>
 
 
     <p>
-
       Choose a property type and start creating
       your perfect living space.
-
     </p>
 
   </div>
+
 
 
   <div class="property-grid">
@@ -407,6 +391,9 @@ document.querySelector("#app").innerHTML = `
   </div>
 
 </section>
+
+
+
 <!-- ====================================================
      3D REMODELING
      ==================================================== -->
@@ -424,26 +411,21 @@ document.querySelector("#app").innerHTML = `
 
 
     <h2>
-
       See your ideas
       <span>
         come to life.
       </span>
-
     </h2>
 
 
     <p>
-
       Customize your home before making a decision.
       Experiment with furniture, colors, lighting
       and different room arrangements.
-
     </p>
 
 
     <div class="feature-list">
-
 
       <div class="feature">
 
@@ -564,11 +546,9 @@ document.querySelector("#app").innerHTML = `
       <div class="sofa">
 
         <div class="sofa-back"></div>
-
         <div class="sofa-seat"></div>
 
         <div class="sofa-arm left"></div>
-
         <div class="sofa-arm right"></div>
 
       </div>
@@ -617,23 +597,20 @@ document.querySelector("#app").innerHTML = `
 
 
     <h2>
-
       Tell us what your
       <span>
         dream home needs.
       </span>
-
     </h2>
 
 
     <p>
-
       Select your requirements and we'll find
       suitable properties for you.
-
     </p>
 
   </div>
+
 
 
   <div class="planner-box">
@@ -750,108 +727,83 @@ document.querySelector("#app").innerHTML = `
 
       <div class="checkbox-grid">
 
-
         <label>
-
           <input
             type="checkbox"
             name="feature"
             value="Water"
           />
-
           💧 Water
-
         </label>
 
 
         <label>
-
           <input
             type="checkbox"
             name="feature"
             value="Grocery"
           />
-
           🛒 Grocery nearby
-
         </label>
 
 
         <label>
-
           <input
             type="checkbox"
             name="feature"
             value="Electricity"
           />
-
           ⚡ Electricity
-
         </label>
 
 
         <label>
-
           <input
             type="checkbox"
             name="feature"
             value="Parking"
           />
-
           🚗 Parking
-
         </label>
 
 
         <label>
-
           <input
             type="checkbox"
             name="feature"
             value="Garden"
           />
-
           🌳 Garden
-
         </label>
 
 
         <label>
-
           <input
             type="checkbox"
             name="feature"
             value="Balcony"
           />
-
           🌇 Balcony
-
         </label>
 
 
         <label>
-
           <input
             type="checkbox"
             name="feature"
             value="Terrace"
           />
-
           🏙️ Terrace
-
         </label>
 
 
         <label>
-
           <input
             type="checkbox"
             name="feature"
             value="Pet"
           />
-
           🐕 Pet friendly
-
         </label>
 
       </div>
@@ -874,6 +826,9 @@ document.querySelector("#app").innerHTML = `
   </div>
 
 </section>
+
+
+
 <!-- ====================================================
      RESULTS
      ==================================================== -->
@@ -891,20 +846,16 @@ document.querySelector("#app").innerHTML = `
 
 
     <h2>
-
       Homes selected
       <span>
         for you.
       </span>
-
     </h2>
 
 
     <p id="result-message">
-
       Submit your requirements to see
       available properties.
-
     </p>
 
   </div>
@@ -936,21 +887,17 @@ document.querySelector("#app").innerHTML = `
 
 
     <h2>
-
       Build a home that
       <span>
         feels like you.
       </span>
-
     </h2>
 
 
     <p>
-
       Smart planning.
       Better living.
       A smarter future.
-
     </p>
 
   </div>
@@ -979,12 +926,9 @@ document.querySelector("#app").innerHTML = `
     🏙️ SMARTCITY
   </div>
 
-
   <p>
-
     © 2026 Smart City.
     Smart homes, smarter living.
-
   </p>
 
 </footer>
@@ -1002,7 +946,6 @@ document.querySelector("#app").innerHTML = `
 
   <div class="designer3d-box">
 
-
     <div class="designer3d-header">
 
       <div>
@@ -1013,12 +956,10 @@ document.querySelector("#app").innerHTML = `
 
 
         <h2>
-
           Design Your
           <span>
             Dream Room
           </span>
-
         </h2>
 
       </div>
@@ -1087,6 +1028,7 @@ document.querySelector("#app").innerHTML = `
             Wall Color
           </label>
 
+
           <input
             type="color"
             value="#e8e2d8"
@@ -1098,6 +1040,7 @@ document.querySelector("#app").innerHTML = `
             Ground / Floor Color
           </label>
 
+
           <input
             type="color"
             value="#b89d7c"
@@ -1108,6 +1051,7 @@ document.querySelector("#app").innerHTML = `
           <label class="designer-label">
             Top / Ceiling Color
           </label>
+
 
           <input
             type="color"
@@ -1264,7 +1208,6 @@ document.querySelector("#app").innerHTML = `
         </div>
 
 
-
         <button
           class="designer-reset"
           onclick="resetDesigner()"
@@ -1296,11 +1239,9 @@ document.querySelector("#app").innerHTML = `
         <div class="designer-help">
 
           🖱️ Drag = Rotate
-
           <br>
 
           🔍 Scroll = Zoom
-
           <br>
 
           🖱️ Right Drag = Pan
@@ -1314,8 +1255,11 @@ document.querySelector("#app").innerHTML = `
   </div>
 
 </div>
+
+
+
 <!-- ====================================================
-     AUTHENTICATION POPUP
+     LOGIN / SIGNUP MODAL
      ==================================================== -->
 
 <div
@@ -1357,10 +1301,8 @@ document.querySelector("#app").innerHTML = `
 
 
       <p class="auth-subtitle">
-
         Login to continue your
         Smart City journey.
-
       </p>
 
 
@@ -1465,10 +1407,8 @@ document.querySelector("#app").innerHTML = `
 
 
       <p class="auth-subtitle">
-
         Join Smart City and design
         your dream home.
-
       </p>
 
 
@@ -1592,7 +1532,126 @@ document.querySelector("#app").innerHTML = `
 </div>
 
 
+
+<!-- ====================================================
+     PROFILE MODAL
+     ==================================================== -->
+
+<div
+  id="profileModal"
+  class="profile-modal"
+>
+
+  <div class="profile-box">
+
+
+    <button
+      class="profile-close"
+      onclick="closeProfile()"
+    >
+      ✕
+    </button>
+
+
+    <div class="profile-icon">
+      👤
+    </div>
+
+
+    <h2>
+      My Profile
+    </h2>
+
+
+    <p class="profile-welcome">
+      Welcome to Smart City!
+    </p>
+
+
+    <div class="profile-details">
+
+
+      <div class="profile-detail">
+
+        <span>
+          👤
+        </span>
+
+        <div>
+
+          <small>
+            Full Name
+          </small>
+
+          <strong id="profileName">
+            -
+          </strong>
+
+        </div>
+
+      </div>
+
+
+
+      <div class="profile-detail">
+
+        <span>
+          📧
+        </span>
+
+        <div>
+
+          <small>
+            Email Address
+          </small>
+
+          <strong id="profileEmail">
+            -
+          </strong>
+
+        </div>
+
+      </div>
+
+
+
+      <div class="profile-detail">
+
+        <span>
+          📱
+        </span>
+
+        <div>
+
+          <small>
+            Phone Number
+          </small>
+
+          <strong id="profilePhone">
+            -
+          </strong>
+
+        </div>
+
+      </div>
+
+
+    </div>
+
+
+    <button
+      class="profile-done-btn"
+      onclick="closeProfile()"
+    >
+      Done
+    </button>
+
+  </div>
+
+</div>
+
 `;
+
 
 
 // ======================================================
@@ -1637,6 +1696,9 @@ function selectProperty(type) {
   startPlanning();
 
 }
+
+
+
 // ======================================================
 // 3D DESIGNER
 // ======================================================
@@ -1821,22 +1883,28 @@ function closeAuthModal() {
 
 
 // ======================================================
-// LOGIN SUBMIT
+// SUBMIT LOGIN
 // ======================================================
 
 function submitLogin() {
 
   const email =
-    document.querySelector(
-      "#loginEmail"
-    ).value.trim();
+    document
+      .querySelector("#loginEmail")
+      .value
+      .trim()
+      .toLowerCase();
 
 
   const password =
-    document.querySelector(
-      "#loginPassword"
-    ).value.trim();
+    document
+      .querySelector("#loginPassword")
+      .value;
 
+
+  // -------------------------------
+  // VALIDATION
+  // -------------------------------
 
   if (!email) {
 
@@ -1871,58 +1939,171 @@ function submitLogin() {
   }
 
 
-  alert(
-    `Welcome back!\n\nLogin successful for:\n${email}`
+
+  // -------------------------------
+  // GET REGISTERED USER
+  // -------------------------------
+
+  const savedUser =
+    localStorage.getItem(
+      "smartCityUser"
+    );
+
+
+  if (!savedUser) {
+
+    alert(
+      "No account found.\n\nPlease create an account first."
+    );
+
+    return;
+
+  }
+
+
+  let user;
+
+
+  try {
+
+    user =
+      JSON.parse(savedUser);
+
+  }
+
+  catch (error) {
+
+    alert(
+      "User data is corrupted. Please sign up again."
+    );
+
+    localStorage.removeItem(
+      "smartCityUser"
+    );
+
+    return;
+
+  }
+
+
+
+  // -------------------------------
+  // CHECK EMAIL
+  // -------------------------------
+
+  if (
+    user.email.toLowerCase() !== email
+  ) {
+
+    alert(
+      "Incorrect email address."
+    );
+
+    return;
+
+  }
+
+
+
+  // -------------------------------
+  // CHECK PASSWORD
+  // -------------------------------
+
+  if (
+    user.password !== password
+  ) {
+
+    alert(
+      "Incorrect password."
+    );
+
+    return;
+
+  }
+
+
+
+  // -------------------------------
+  // LOGIN SUCCESS
+  // -------------------------------
+
+  localStorage.setItem(
+    "smartCityLoggedIn",
+    "true"
   );
 
 
   closeAuthModal();
+
+
+  updateNavbar();
+
+
+  alert(
+    `Welcome back, ${user.name}!`
+  );
+
+
+  // Clear login fields
+
+  document.querySelector(
+    "#loginPassword"
+  ).value = "";
 
 }
 
 
 
 // ======================================================
-// SIGN UP SUBMIT
+// SUBMIT SIGN UP
 // ======================================================
 
 function submitSignup() {
 
   const name =
-    document.querySelector(
-      "#signupName"
-    ).value.trim();
+    document
+      .querySelector("#signupName")
+      .value
+      .trim();
 
 
   const email =
-    document.querySelector(
-      "#signupEmail"
-    ).value.trim();
+    document
+      .querySelector("#signupEmail")
+      .value
+      .trim()
+      .toLowerCase();
 
 
   const phone =
-    document.querySelector(
-      "#signupPhone"
-    ).value.trim();
+    document
+      .querySelector("#signupPhone")
+      .value
+      .trim();
 
 
   const password =
-    document.querySelector(
-      "#signupPassword"
-    ).value;
+    document
+      .querySelector("#signupPassword")
+      .value;
 
 
   const confirmPassword =
-    document.querySelector(
-      "#signupConfirmPassword"
-    ).value;
+    document
+      .querySelector("#signupConfirmPassword")
+      .value;
 
 
   const terms =
-    document.querySelector(
-      "#termsCheck"
-    ).checked;
+    document
+      .querySelector("#termsCheck")
+      .checked;
 
+
+
+  // -------------------------------
+  // VALIDATION
+  // -------------------------------
 
   if (!name) {
 
@@ -1990,7 +2171,9 @@ function submitSignup() {
   }
 
 
-  if (password !== confirmPassword) {
+  if (
+    password !== confirmPassword
+  ) {
 
     alert(
       "Passwords do not match."
@@ -2012,12 +2195,93 @@ function submitSignup() {
   }
 
 
+
+  // -------------------------------
+  // CREATE USER OBJECT
+  // -------------------------------
+
+  const user = {
+
+    name: name,
+
+    email: email,
+
+    phone: phone,
+
+    password: password
+
+  };
+
+
+
+  // -------------------------------
+  // SAVE USER
+  // -------------------------------
+
+  localStorage.setItem(
+    "smartCityUser",
+    JSON.stringify(user)
+  );
+
+
+  // -------------------------------
+  // LOGIN USER AUTOMATICALLY
+  // -------------------------------
+
+  localStorage.setItem(
+    "smartCityLoggedIn",
+    "true"
+  );
+
+
+  // -------------------------------
+  // CLOSE MODAL
+  // -------------------------------
+
+  closeAuthModal();
+
+
+  // -------------------------------
+  // UPDATE NAVBAR
+  // -------------------------------
+
+  updateNavbar();
+
+
+  // -------------------------------
+  // SUCCESS MESSAGE
+  // -------------------------------
+
   alert(
     `Account created successfully!\n\nWelcome ${name}!`
   );
 
 
-  closeAuthModal();
+  // Clear signup form
+
+  document.querySelector(
+    "#signupName"
+  ).value = "";
+
+  document.querySelector(
+    "#signupEmail"
+  ).value = "";
+
+  document.querySelector(
+    "#signupPhone"
+  ).value = "";
+
+  document.querySelector(
+    "#signupPassword"
+  ).value = "";
+
+  document.querySelector(
+    "#signupConfirmPassword"
+  ).value = "";
+
+  document.querySelector(
+    "#termsCheck"
+  ).checked = false;
 
 }
 
@@ -2030,9 +2294,10 @@ function submitSignup() {
 function forgotPassword() {
 
   const email =
-    document.querySelector(
-      "#loginEmail"
-    ).value.trim();
+    document
+      .querySelector("#loginEmail")
+      .value
+      .trim();
 
 
   if (!email) {
@@ -2051,6 +2316,312 @@ function forgotPassword() {
   );
 
 }
+
+
+
+// ======================================================
+// UPDATE NAVBAR
+// ======================================================
+
+function updateNavbar() {
+
+  const navButtons =
+    document.querySelector(
+      "#navButtons"
+    );
+
+
+  if (!navButtons) {
+
+    return;
+
+  }
+
+
+  const isLoggedIn =
+    localStorage.getItem(
+      "smartCityLoggedIn"
+    ) === "true";
+
+
+  const savedUser =
+    localStorage.getItem(
+      "smartCityUser"
+    );
+
+
+  let user = null;
+
+
+  if (savedUser) {
+
+    try {
+
+      user =
+        JSON.parse(savedUser);
+
+    }
+
+    catch (error) {
+
+      user = null;
+
+    }
+
+  }
+
+
+
+  // --------------------------------
+  // USER LOGGED IN
+  // --------------------------------
+
+  if (
+    isLoggedIn &&
+    user
+  ) {
+
+    navButtons.innerHTML = `
+
+      <div class="logged-user-area">
+
+        <span class="welcome-user">
+          Hi, ${escapeHTML(user.name)}
+        </span>
+
+
+        <button
+          class="profile-btn"
+          onclick="showProfile()"
+        >
+          👤 Profile
+        </button>
+
+
+        <button
+          class="logout-btn"
+          onclick="logoutUser()"
+        >
+          Logout
+        </button>
+
+      </div>
+
+    `;
+
+    return;
+
+  }
+
+
+
+  // --------------------------------
+  // USER NOT LOGGED IN
+  // --------------------------------
+
+  navButtons.innerHTML = `
+
+    <button
+      class="login-btn"
+      onclick="loginUser()"
+    >
+      Login
+    </button>
+
+
+    <button
+      class="signup-btn"
+      onclick="signupUser()"
+    >
+      Sign Up
+    </button>
+
+  `;
+
+}
+
+
+
+// ======================================================
+// SHOW PROFILE
+// ======================================================
+
+function showProfile() {
+
+  const modal =
+    document.querySelector(
+      "#profileModal"
+    );
+
+
+  const savedUser =
+    localStorage.getItem(
+      "smartCityUser"
+    );
+
+
+  if (!savedUser) {
+
+    alert(
+      "Please login first."
+    );
+
+    return;
+
+  }
+
+
+  let user;
+
+
+  try {
+
+    user =
+      JSON.parse(savedUser);
+
+  }
+
+  catch (error) {
+
+    alert(
+      "Unable to load profile."
+    );
+
+    return;
+
+  }
+
+
+
+  // Fill profile information
+
+  document.querySelector(
+    "#profileName"
+  ).textContent =
+    user.name || "-";
+
+
+  document.querySelector(
+    "#profileEmail"
+  ).textContent =
+    user.email || "-";
+
+
+  document.querySelector(
+    "#profilePhone"
+  ).textContent =
+    user.phone || "-";
+
+
+
+  modal.classList.add(
+    "active"
+  );
+
+}
+
+
+
+// ======================================================
+// CLOSE PROFILE
+// ======================================================
+
+function closeProfile() {
+
+  const modal =
+    document.querySelector(
+      "#profileModal"
+    );
+
+
+  if (modal) {
+
+    modal.classList.remove(
+      "active"
+    );
+
+  }
+
+}
+
+
+
+// ======================================================
+// LOGOUT
+// ======================================================
+
+function logoutUser() {
+
+  const confirmLogout =
+    confirm(
+      "Are you sure you want to logout?"
+    );
+
+
+  if (!confirmLogout) {
+
+    return;
+
+  }
+
+
+  localStorage.setItem(
+    "smartCityLoggedIn",
+    "false"
+  );
+
+
+  closeProfile();
+
+
+  updateNavbar();
+
+
+  alert(
+    "You have been logged out successfully."
+  );
+
+}
+
+
+
+// ======================================================
+// ESCAPE HTML
+// ======================================================
+
+function escapeHTML(value) {
+
+  return String(value)
+
+    .replace(
+      /&/g,
+      "&amp;"
+    )
+
+    .replace(
+      /</g,
+      "&lt;"
+    )
+
+    .replace(
+      />/g,
+      "&gt;"
+    )
+
+    .replace(
+      /"/g,
+      "&quot;"
+    )
+
+    .replace(
+      /'/g,
+      "&#039;"
+    );
+
+}
+
+
+
 // ======================================================
 // FIND HOMES
 // ======================================================
@@ -2062,29 +2633,17 @@ async function findHomes() {
   );
 
 
-  // ====================================================
-  // PROPERTY
-  // ====================================================
-
   const property =
     document.querySelector(
       'input[name="property"]:checked'
     );
 
 
-  // ====================================================
-  // PURPOSE
-  // ====================================================
-
   const purpose =
     document.querySelector(
       'input[name="purpose"]:checked'
     );
 
-
-  // ====================================================
-  // FEATURES
-  // ====================================================
 
   const selectedFeatures =
     Array.from(
@@ -2098,9 +2657,10 @@ async function findHomes() {
     );
 
 
-  // ====================================================
+
+  // -------------------------------
   // VALIDATION
-  // ====================================================
+  // -------------------------------
 
   if (!property) {
 
@@ -2124,9 +2684,6 @@ async function findHomes() {
   }
 
 
-  // ====================================================
-  // ELEMENTS
-  // ====================================================
 
   const resultsSection =
     document.querySelector(
@@ -2181,9 +2738,10 @@ async function findHomes() {
   });
 
 
-  // ====================================================
+
+  // -------------------------------
   // BACKEND
-  // ====================================================
+  // -------------------------------
 
   try {
 
@@ -2238,14 +2796,17 @@ async function findHomes() {
     );
 
 
-    // ==================================================
+
+    // -------------------------------
     // NORMALIZE RESPONSE
-    // ==================================================
+    // -------------------------------
 
     let houses = [];
 
 
-    if (Array.isArray(data)) {
+    if (
+      Array.isArray(data)
+    ) {
 
       houses = data;
 
@@ -2327,8 +2888,7 @@ async function findHomes() {
         </p>
 
         <p>
-          Make sure your backend is running
-          on port 5000.
+          Make sure your backend is running.
         </p>
 
       </div>
@@ -2375,11 +2935,14 @@ function displayResults(
   );
 
 
-  // ====================================================
-  // INVALID DATA
-  // ====================================================
 
-  if (!Array.isArray(houses)) {
+  // -------------------------------
+  // INVALID DATA
+  // -------------------------------
+
+  if (
+    !Array.isArray(houses)
+  ) {
 
     message.textContent =
       "Unable to load properties.";
@@ -2411,11 +2974,14 @@ function displayResults(
   }
 
 
-  // ====================================================
-  // NO RESULTS
-  // ====================================================
 
-  if (houses.length === 0) {
+  // -------------------------------
+  // NO RESULTS
+  // -------------------------------
+
+  if (
+    houses.length === 0
+  ) {
 
     message.textContent =
       `No ${propertyType} properties found for ${purpose}.`;
@@ -2447,13 +3013,15 @@ function displayResults(
   }
 
 
+
   message.textContent =
     `${houses.length} ${propertyType.toLowerCase()} option(s) available for ${purpose.toLowerCase()}.`;
 
 
-  // ====================================================
+
+  // -------------------------------
   // CREATE PROPERTY CARDS
-  // ====================================================
+  // -------------------------------
 
   resultsGrid.innerHTML =
     houses
@@ -2461,14 +3029,16 @@ function displayResults(
         house => {
 
 
-          // ============================================
+          // -------------------------
           // FEATURES
-          // ============================================
+          // -------------------------
 
           const houseFeatures = [];
 
 
-          if (house.parking === true) {
+          if (
+            house.parking === true
+          ) {
 
             houseFeatures.push(
               "🚗 Parking"
@@ -2477,7 +3047,9 @@ function displayResults(
           }
 
 
-          if (house.garden === true) {
+          if (
+            house.garden === true
+          ) {
 
             houseFeatures.push(
               "🌳 Garden"
@@ -2486,7 +3058,9 @@ function displayResults(
           }
 
 
-          if (house.balcony === true) {
+          if (
+            house.balcony === true
+          ) {
 
             houseFeatures.push(
               "🌿 Balcony"
@@ -2495,7 +3069,9 @@ function displayResults(
           }
 
 
-          if (house.terrace === true) {
+          if (
+            house.terrace === true
+          ) {
 
             houseFeatures.push(
               "🏡 Terrace"
@@ -2504,7 +3080,9 @@ function displayResults(
           }
 
 
-          if (house.petFriendly === true) {
+          if (
+            house.petFriendly === true
+          ) {
 
             houseFeatures.push(
               "🐶 Pet Friendly"
@@ -2513,7 +3091,9 @@ function displayResults(
           }
 
 
-          if (house.remodeling === true) {
+          if (
+            house.remodeling === true
+          ) {
 
             houseFeatures.push(
               "🛠 Remodeling"
@@ -2522,9 +3102,12 @@ function displayResults(
           }
 
 
+
           const featureHTML =
             houseFeatures.length
+
               ? houseFeatures
+
                   .map(
                     feature => `
 
@@ -2534,6 +3117,7 @@ function displayResults(
 
                     `
                   )
+
                   .join("")
 
               : `
@@ -2545,14 +3129,17 @@ function displayResults(
                 `;
 
 
-          // ============================================
+
+          // -------------------------
           // PRICE
-          // ============================================
+          // -------------------------
 
           let priceText;
 
 
-          if (purpose === "Rent") {
+          if (
+            purpose === "Rent"
+          ) {
 
             priceText =
               `₹${Number(
@@ -2571,12 +3158,14 @@ function displayResults(
           }
 
 
-          // ============================================
-          // OTHER DETAILS
-          // ============================================
+
+          // -------------------------
+          // DETAILS
+          // -------------------------
 
           const image =
             house.image ||
+
             "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=900&q=80";
 
 
@@ -2602,9 +3191,10 @@ function displayResults(
             house.familySize ?? 0;
 
 
-          // ============================================
+
+          // -------------------------
           // CARD
-          // ============================================
+          // -------------------------
 
           return `
 
@@ -2616,7 +3206,7 @@ function displayResults(
 
                 <img
                   src="${image}"
-                  alt="${name}"
+                  alt="${escapeHTML(name)}"
 
                   onerror="
                     this.src='https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=900&q=80'
@@ -2625,9 +3215,7 @@ function displayResults(
 
 
                 <span class="match-badge">
-
                   ✓ MATCHED FOR YOU
-
                 </span>
 
               </div>
@@ -2636,12 +3224,12 @@ function displayResults(
               <div class="property-info">
 
                 <h3>
-                  ${name}
+                  ${escapeHTML(name)}
                 </h3>
 
 
                 <p class="property-location">
-                  📍 ${location}
+                  📍 ${escapeHTML(location)}
                 </p>
 
 
@@ -2656,11 +3244,9 @@ function displayResults(
                     🛏 ${bedrooms} Bedrooms
                   </span>
 
-
                   <span>
                     🚿 ${bathrooms} Bathrooms
                   </span>
-
 
                   <span>
                     👨‍👩‍👧‍👦 Family ${familySize}
@@ -2680,9 +3266,7 @@ function displayResults(
                   class="btn-primary"
                   onclick="viewHome('${escapeQuotes(name)}')"
                 >
-
                   View Property →
-
                 </button>
 
               </div>
@@ -2696,6 +3280,9 @@ function displayResults(
       .join("");
 
 }
+
+
+
 // ======================================================
 // ESCAPE PROPERTY NAME
 // ======================================================
@@ -2703,10 +3290,12 @@ function displayResults(
 function escapeQuotes(text) {
 
   return String(text)
+
     .replace(
       /\\/g,
       "\\\\"
     )
+
     .replace(
       /'/g,
       "\\'"
@@ -2884,3 +3473,72 @@ window.submitSignup =
 
 window.forgotPassword =
   forgotPassword;
+
+
+
+// ---------------- PROFILE ----------------
+
+window.updateNavbar =
+  updateNavbar;
+
+
+window.showProfile =
+  showProfile;
+
+
+window.closeProfile =
+  closeProfile;
+
+
+window.logoutUser =
+  logoutUser;
+
+
+
+// ======================================================
+// INITIALIZE NAVBAR
+// ======================================================
+
+updateNavbar();
+
+
+
+// ======================================================
+// CLOSE MODALS WHEN CLICKING OUTSIDE
+// ======================================================
+
+document.addEventListener(
+  "click",
+  function(event) {
+
+    const authModal =
+      document.querySelector(
+        "#authModal"
+      );
+
+
+    const profileModal =
+      document.querySelector(
+        "#profileModal"
+      );
+
+
+    if (
+      event.target === authModal
+    ) {
+
+      closeAuthModal();
+
+    }
+
+
+    if (
+      event.target === profileModal
+    ) {
+
+      closeProfile();
+
+    }
+
+  }
+);
